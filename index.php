@@ -6,13 +6,13 @@
   </head>
   <body>
     <?php
-    $text = 'C\'est presque bon';
-      for ($number = 20; $number > 0; $number--) {
-        echo $text.'<br/>';
+      $age = 25;
+      $prenom = 'Victorien';
+      $nom = 'HUIBANT';
+      function concat($age, $prenom, $nom) {
+        return 'Bonjour '.$nom.' '.$prenom.', tu as '.$age.' ans.';
       }
-      if ($number == 0) {
-        echo ('C\'est bon !');
-      }
+      echo concat($age, $prenom, $nom);
      ?>
   </body>
 </html>
